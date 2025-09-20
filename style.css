@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Запрещаем выделение текста и масштабирование */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.button-grid {
+    display: grid;
+    grid-gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    /* Делаем кнопки большими для пальцев */
+    min-height: 60px;
+}
+
+.btn:active {
+    opacity: 0.8; /* Эффект нажатия */
+}
+
+.btn-on {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-off {
+    background-color: #f44336;
+    color: white;
+}
+
+.status {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+}

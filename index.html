@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Умный Пульт</title>
+    
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Подключаем Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Иконка для Apple устройств -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" color="black">
+    <link rel="apple-touch-icon" href="images/icon-192x192.png">
+    
+    <!-- Иконка в браузере -->
+    <link rel="icon" type="image/png" href="images/icon-192x192.png"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Управление</h1>
+        
+        <div class="button-grid">
+            <button class="btn btn-on" onclick="sendCommand('light_on')">Включить свет</button>
+            <button class="btn btn-off" onclick="sendCommand('light_off')">Выключить свет</button>
+            <button class="btn" onclick="sendCommand('mode_1')">Режим 1</button>
+            <button class="btn" onclick="sendCommand('mode_2')">Режим 2</button>
+            <!-- Добавьте больше кнопок по необходимости -->
+        </div>
+        
+        <div class="status" id="status">Готов к работе.</div>
+    </div>
+
+    <!-- Подключаем JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
