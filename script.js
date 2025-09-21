@@ -1,6 +1,6 @@
 // Инициализация EmailJS. 
 // ЗАМЕНИТЕ 'YOUR_PUBLIC_KEY' на ваш настоящий Public Key из Dashboard!
-emailjs.init("YOUR_PUBLIC_KEY"); 
+emailjs.init("MuS_BIZNb6BMqsm0E"); 
 
 // Функция для отправки команды
 async function sendCommand(command) {
@@ -17,8 +17,8 @@ async function sendCommand(command) {
         // Отправляем письмо
         // ЗАМЕНИТЕ 'your_service_id' и 'your_template_id' на реальные ID!
         const response = await emailjs.send(
-            'your_service_id', // Ваш Service ID
-            'your_template_id', // Ваш Template ID
+            'service_sx6aow8', // Ваш Service ID
+            'template_vlw458y', // Ваш Template ID
             templateParams // Переменные для подстановки в шаблон
         );
 
@@ -35,3 +35,4 @@ async function sendCommand(command) {
         statusElement.textContent = 'Ошибка отправки. Проверьте консоль.';
     }
 }
+
